@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DebugVersusReleaseIssue (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "DebugVersusReleaseIssue (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
