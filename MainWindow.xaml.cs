@@ -1,3 +1,5 @@
+using DebugVersusReleaseIssue.ViewModels;
+using DebugVersusReleaseIssue.Views;
 using Microsoft.UI.Xaml;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -13,6 +15,16 @@ namespace DebugVersusReleaseIssue
         public MainWindow()
         {
             this.InitializeComponent();
+
+            Activated += MainWindow_Activated;
+        }
+
+        private void MainWindow_Activated(object sender, WindowActivatedEventArgs args)
+        {
+            //var content = new MainWindowView();
+            //content.DataContext = new MainWindowViewModel();
+
+            //Content = content;
         }
     }
 }

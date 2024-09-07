@@ -27,12 +27,7 @@ namespace DebugVersusReleaseIssue
         /// <param name="args">Details about the launch request and process.</param>
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
-            var content = new MainWindowView();
-            content.DataContext = new MainWindowViewModel();
-
             m_window = new MainWindow();
-            m_window.Content = content;
-
             m_window.Activate();
         }
 
